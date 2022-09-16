@@ -1,6 +1,8 @@
 // se crea dos listas: palabra y su pista respectiva
-const lista = ['caminar', 'jugar', 'automovil', 'cuaderno', 'radio', 'profesor', 'elefante', 'sonreir', 'laptop', 'celular'];
-const pista = ['accion movilizarse ', 'recreativo', 'transporte', 'objeto', 'medio de receptor', 'sujeto', 'animal', 'feliz', 'objeto', 'dispositivo']
+const lista = ['caminar', 'jugar', 'automovil', 'cuaderno', 'radio', 'profesor', 'elefante',
+              'sonreir', 'laptop', 'celular'];
+const pista = ['accion movilizarse ', 'recreativo', 'transporte', 'objeto', 'medio de receptor',
+              'sujeto', 'animal', 'feliz', 'objeto', 'dispositivo']
 
 // se obtiene una palabra aleatoria y tambien se guarda la posicion para su respectiva pista
 const palabra = lista[Math.floor(Math.random()*lista.length)];
