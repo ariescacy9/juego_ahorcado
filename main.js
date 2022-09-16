@@ -25,10 +25,9 @@ document.querySelector('#probar').addEventListener('click', jugar = ()=> {
   }
   if(fallado){
     contadorFallos++;
-    console.log(contadorFallos);
+    console.log(contadorFallos, "fallos");
     document.querySelector('#img').style.backgroundPosition= -(200*contadorFallos)+'px 0';
     if(contadorFallos==4){
-      console.log('has perdido');
       contadorFallos=0;
       swal.fire('Perdiste', 'no te preocupes, sigue intentando', 'error');
     }
@@ -43,30 +42,3 @@ document.querySelector('#probar').addEventListener('click', jugar = ()=> {
   document.querySelector('#output').innerHTML=guiones;
   document.querySelector('#letra').focus();
 })
-
-
-let a=12;
-let b =10;
-let c=1;
-
-function jaja(a,b,c){
-  if(a>b){
-    if(a>c){
-      return ('a es mayor');
-    }else {
-      return('c es mayor')
-    }
-  } else{
-    return('b es mayor')
-  }
-}
-
-function mayor(a,b){
-  if(a>b){
-    return('a mayor')
-  }else{
-    return('b mayor')
-  }
-}
-
-mayor(mayor(a,b),c);
